@@ -1,4 +1,4 @@
-.gah:before{
+.gah:before {
 	border: 1px solid #FFFFFF;
 	padding-left: 40px; 
 	padding-right: 40px; 
@@ -7,12 +7,30 @@
 	color: #FFFFFF;
 }
 
-.gah:hover{
-	border: 2px solid #fcd307;
+.gah:hover {
+	border: 1px solid #fcd307;
 	padding-left: 40px; 
 	padding-right: 40px; 
 	padding-top: 10px; 
 	padding-bottom: 10px; 
 	color: #fcd307;
 	background-color: #000000;
+}
+
+.toplink:before {
+	float: left; 
+	margin-right: 10px; 
+	color: #000000;
+}
+
+.toplink {
+	float: left; 
+	margin-right: 10px; 
+	color: #000000;
+}
+
+.toplink:hover {
+	float: left; 
+	margin-right: 10px; 
+	color: #fcd307;
 }
