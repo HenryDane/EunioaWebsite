@@ -20,6 +20,10 @@
 				font-family: header;
 				src: url(fonts/header.woff2);
 			}
+			@font-face {
+				font-family: helvetica;
+				src: url(fonts/helvetica.woff);
+			}
 		</style>
 	</head>
 	
@@ -108,9 +112,9 @@
 			<div class="row">
 				<center> <b>			
 					<div style="width:20%; display:inline-block;">
-						<img src="img/heart.png style="height: 100px; width:auto;">
+						<!--- <img src="img/heart.png" style="height: 100px; width:auto;"> -->
 
-						<!--<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 width="100px" height="100px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve" fill="#FFFFFF">
 							<g>
 								<g id="favorite">
@@ -118,7 +122,7 @@
 										C283.05,40.8,326.4,20.4,369.75,20.4C448.8,20.4,510,81.6,510,160.65c0,96.9-86.7,175.95-219.3,293.25L255,489.6z"/>
 								</g>
 							</g>
-						</svg>-->
+						</svg>
 						<p> Share love. </p>
 					</div>
 					
@@ -187,14 +191,96 @@
 		<div style="margin: 30px;"></div>
 		
 		<div style="background-color: #222222; ">
+			<div style="padding: 15px;"></div>
 			<div class="container" style="color: #FFFFFF;">
-				<h1 style="font-family: header; display:inline-block; font-size: 60px; margin-left: 15px; margin-bottom: 0px; padding-bottom: 2px;"> <p style="font-size: 60px; display:inline-block; font-weight: bolder;"> + </p> CONCTACT US	</h1>
-				<p style="font-family: header; font-size: 20px; margin-left: 65px; margin-top: 0px;"> Over the phone or online </p>
+							
+				<div class="row">
+					<div class="col-md-7">
+						<h1 style="font-family: header; display:inline-block; font-size: 60px; margin-left: 15px; margin-bottom: 0px; padding-bottom: 2px;"> <p style="font-size: 60px; display:inline-block; font-weight: bolder;"> + </p> CONCTACT US	</h1>
+						<p style="font-family: header; font-size: 20px; margin-left: 65px; margin-top: 0px;"> Over the phone or online </p>
+						<div style="margin-left: 70px;">
+							<img style="width: 25px; margin: 2px; display:inline-block;" src="img/email.png"> <p style="display:inline-block; font-family: helvetica; font-size: 15px;"> eunoia.main@gmail.com </p> <br>
+							<img style="height: 25px; margin: 2px; margin-left: 8px; margin-top: 5px; display:inline-block; margin-right: 8px;" src="img/phone.png"> <p style="display:inline-block; font-family: helvetica; font-size: 15px;"> (916) 613 - 6019 </p>
+						</div>
+						
+						<br>
+						<p style="margin-left: 75px; font-face: Helvetica; margin-top: 10px; font-size: 15px;"> Sacramento CA </p>
+					</div>
+					
+					<div class="col-md-1"></div>
+					
+					<div class="col-md-4">
+						<p style="color: #FFFFFF; font-face: Helvetica; font-size: 20px;"> Want to learn more? Join our mailing list!</p>
+						<form style="color: #000000;">
+							<div class="input-group" style="margin-bottom: 7px;">
+								<span class="input-group-addon" id="basic-addon1">Name: </span>
+								<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+							</div>
+							<div class="input-group" style="margin-bottom: 7px;">
+								<span class="input-group-addon" id="basic-addon1">Email: </span>
+								<input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+							</div>
+							<button type="submit" class="btn sample sm">Join!</button>
+						</form>
+					</div>
+				</div>
+								
+				<div class="row">
+					<div class="col-md-4">
+						<div>
+							<div id="map" style="width:250px;height:250px; margin-left: 75px;"> </div>
+						</div>
+					</div>
+					<form>
+						<div class="col-md-4" style="color: #000000;">
+							<p style="color: #FFFFFF; font-face: Helvetica; font-size: 20px;"> Got questions or comments?</p>
+							<div class="input-group" style="margin-bottom: 7px;">
+								<span class="input-group-addon" id="basic-addon1">Name: </span>
+								<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+							</div>
+							<div class="input-group" style="margin-bottom: 7px;">
+								<span class="input-group-addon" id="basic-addon1">Email: </span>
+								<input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+							</div>
+							<div class="input-group" style="margin-bottom: 7px;">
+								<span class="input-group-addon" id="basic-addon1">Subject: </span>
+								<input type="text" class="form-control" placeholder="Subject" aria-describedby="basic-addon1">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<p style="color: #FFFFFF; font-face: Helvetica; font-size: 20px;"> Leave us a message here:</p>
+							<div class="input-group" style="width: 100%; margin-bottom: 7px;">
+								<label for="message">Message:</label>
+								<textarea id="message" class="form-control" rows="4" placeholder="Message" aria-describedby="basic-addon1"> </textarea>
+							</div>
+							<button type="submit" class="btn sample sm pull-right" >Send Message!</button>
+						</div>
+						
+					</form>
+				</div>
 			</div>
+			<div style="padding: 30px;"></div>
 		</div>
 		
 		<div style="margin: 30px;"></div>
 	
 	</body>
 
+	<script>
+		function myMap() {
+			var mapOptions = {
+				center: new google.maps.LatLng(38.5816, -121.4944),
+				zoom: 12,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			
+			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+			
+			var center = new google.maps.LatLng(38.5816, -121.4944);
+			var marker = new google.maps.Marker({position: center });
+			marker.setMap(map);
+		}
+	</script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 </html>
