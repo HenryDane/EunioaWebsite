@@ -1,0 +1,40 @@
+@font-face {
+	font-family: belinda;
+	src: url(../fonts/belinda.woff2);
+}
+@font-face {
+	font-family: subtitle;
+	src: url(../fonts/subtitle.woff2);
+}
+@font-face {
+	font-family: header;
+	src: url(../fonts/header.woff2);
+}
+@font-face {
+	font-family: helvetica;
+	src: url(../fonts/helvetica.woff);
+}
+@font-face {
+	font-family: textfont1;
+	src: url(../fonts/textfont-1.woff2);
+}
+@font-face {
+	font-family: textfont2;
+	src: url(../fonts/textfont-2.woff2);
+}
+@font-face {
+	font-family: textfont3;
+	src: url(../fonts/textfont-3.woff2);
+}
+@font-face {
+	font-family: funqy;
+	src: url(../fonts/funqy.woff2);
+}
+@font-face {
+	font-family: curly;
+	src: url(../fonts/curly.woff);
+}
+@font-face {
+	font-family: stars;
+	scr: url(../fonts/starsalt.woff2);
+}
