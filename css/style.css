@@ -39,6 +39,11 @@
     border: 1px solid #ccc;
 }*/
 
+div.gallery {
+    margin: 5px;
+    width: auto;
+    padding: 23px
+
 div.gallery img {
     width: 100%;
     height: auto;
