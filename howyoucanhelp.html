@@ -77,7 +77,7 @@
 					<p style="font-size: 30px; font-family: stars; margin: 40px; margin-top: -10px;"> Thinking about becoming A Volunteer? </p>
 				</center>
 			</div>
-			<form style="color: #000000;">
+			<form style="color: #000000;" action="doVolunteerMessage.php" method="get">
 				<div class="col-md-3"> 
 					<div class="input-group" style="margin-bottom: 7px;">
 						<span class="input-group-addon" id="basic-addon1">Name: </span>
@@ -94,8 +94,9 @@
 				</div>
 				<div class="col-md-3"> 
 					<div class="input-group" style="width: 100%; margin-bottom: 7px;">
-						<textarea id="message" class="form-control" rows="5" placeholder="Message" aria-describedby="basic-addon1"> </textarea>
+						<textarea id="message" class="form-control" rows="2" placeholder="Message" aria-describedby="basic-addon1"> </textarea>
 					</div>
+					<button type="submit" class="btn sample sm pull-right" >Volunteer!</button> 
 				</div>
 			</form>
 		</div>
