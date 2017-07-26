@@ -91,24 +91,24 @@
 					<p style="font-size: 30px; font-family: stars; margin: 40px; margin-top: -10px;"> Thinking about becoming A Volunteer? </p>
 				</center>
 			</div>
-			<form style="color: #000000;" action="doVolunteerMessage.php" method="get">
+			<form style="color: #000000;" action="doVolunteerAndReturn.php" method="get">
 				<div class="col-md-3"> 
 					<div class="input-group" style="margin-bottom: 7px;">
 						<span class="input-group-addon" id="basic-addon1">Name: </span>
-						<input type="text" id="name" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+						<input type="text" name="name" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 					</div>
 					<div class="input-group" style="margin-bottom: 7px;">
 						<span class="input-group-addon" id="basic-addon1">Email: </span>
-						<input type="text" id="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+						<input type="text" name="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
 					</div>
 					<div class="input-group" style="margin-bottom: 7px;">
 						<span class="input-group-addon" id="basic-addon1">Subject: </span>
-						<input type="text" id="subject" class="form-control" placeholder="Subject" aria-describedby="basic-addon1">
+						<input type="text" name="subject" class="form-control" placeholder="Subject" aria-describedby="basic-addon1">
 					</div>
 				</div>
 				<div class="col-md-3"> 
 					<div class="input-group" style="width: 100%; margin-bottom: 7px;">
-						<textarea id="message" class="form-control" rows="2" placeholder="Message" aria-describedby="basic-addon1"> </textarea>
+						<textarea name="message" class="form-control" rows="2" placeholder="Message" aria-describedby="basic-addon1"> </textarea>
 					</div>
 					<button type="submit" class="btn sample sm pull-right" >Volunteer!</button> 
 				</div>

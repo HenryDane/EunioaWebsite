@@ -1,4 +1,6 @@
 <?php
+	// GENERIC MESSAGE SCRIPT
+	
 	// connect to database (  host       user    password      db 
 	$conn = mysqli_connect("localhost", "blog", "d4b411d4y", "eunioa");
 	if (!$conn) {
@@ -13,11 +15,14 @@
 	$message = mysqli_real_escape_string($conn, $_GET['message']);
 	
 	// insert row
-	$sql = "INSERT INTO volunteerMsgs (name, subject, email, message) VALUES ($name, $subject, $email, $message)";
-	if (!mysqli_query($con,$sql)) {
-		die('Error: ' . mysqli_error($con));
+	$sql = "INSERT INTO recent (name, subject, email, message, type) VALUES ('$name', '$subject', '$email', '$message', 'GENERIC')";
+	if (!mysqli_query($conn,$sql)) {
+		die('Error: ' . mysqli_error($conn));
 	}
-	echo "1 record added";
-	
+		
+	// close connection
 	mysqli_close($conn);
+	
+	// redirect to main page
+	header('Location: index.html');
 ?>
