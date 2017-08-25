@@ -2,7 +2,7 @@
 	// EMAIL CRON JOB PHP SCRIPT
 
 	// connect to database
-	$conn = mysqli_connect("localhost", "blog", "d4b411d4y", "eunioa");
+	$conn = mysqli_connect("localhost", "DATABASE", "PASSWORD", "eunioa");
 	if (!$conn) {
 		die("Connection failed: " . mysqli_connect_error());
 		exit();
@@ -34,10 +34,11 @@
 	}
 	
 	// send email
-	echo mail("aglareb7@gmail.com", "Eunioa Message Update", $data);
+	// echo mail("mailer@eunoianonprofit.org", "Eunioa Message Update", $data,"From: Mailer Daemon <mailer@eunoianonprofit.com>\r\n");
+	echo mail("gracechoi@eunoianonprofit.org", "Eunioa Message Update", $data,"From: Mailer Daemon <mailer@eunoianonprofit.com>\r\n");
 	
 	// move all from recent where date > date from 'old' to old
-	$sql = "INSERT INTO old SELECT * FROM recent WHERE time >= '$date';";
+	$sql = "INSERT INTO old SELECT * FROM recent WHERE time >= '$date' AND name REGEXP BINARY '[A-Z]';";
 	$result = mysqli_query($conn, $sql);
 	if(!$result) {
 		die("Error copying data: " . mysqli_error($conn));
