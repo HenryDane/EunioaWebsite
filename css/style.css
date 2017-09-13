@@ -472,6 +472,11 @@ h4 small,
 	margin-right: 10px;
 }
 
+.people {
+	margin-top: 10px;
+	font-style: italic;
+}
+
 .pull-right img {
 	float: left; margin-right: 10px; width: 20px;
 }
