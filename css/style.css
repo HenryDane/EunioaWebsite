@@ -193,6 +193,8 @@ body {
     line-height: 1.428571429;
     color: #333;
     background-color: #fff
+		overflow-y: scroll;
+		overflow-x: hidden;
 }
 
 input,
@@ -447,6 +449,14 @@ h4 small,
     }
 }
 
+.donate {
+	float: right;
+	margin-right: 10px;
+	margin-top: 15px;
+	background-color: #fcd307;
+	padding: 10px 20px 10px 20px;
+}
+
 .toplink {
 	float: left;
 	margin-right: 10px;
@@ -455,6 +465,15 @@ h4 small,
 
 .toplink:hover {
 	color: #fcd307;
+}
+
+.pull-right div {
+	float: left;
+	margin-right: 10px;
+}
+
+.pull-right img {
+	float: left; margin-right: 10px; width: 20px;
 }
 
 select[multiple],
@@ -538,15 +557,17 @@ input[type="button"].btn-block {
     width: 100%
 }
 
-@font-face {
-    font-family: 'Glyphicons Halflings';
-    src: url('../fonts/glyphicons-halflings-regular.eot');
-    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg')
-}
+
 
 /*div.gallery { For Testing Div size
     border: 1px solid #ccc;
 }*/
+
+.gah {
+	border: 1px solid #FFFFFF;
+	padding: 10px 40px 10px 40px;
+	color: #FFFFFF;
+}
 
 div.gallery {
     margin: 5px;
