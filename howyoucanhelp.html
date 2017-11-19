@@ -20,13 +20,13 @@
 				</div>
 				<div class="col-md-8">
 					<div class="pull-right">
-						<a href="index.html" style="float: left; margin-right: 10px; color: #fcd307;"> HOME </a>
+						<a href="index.html" class="toplink"> HOME </a>
 						<div> | </div>
 						<a href="whatwevedone.html" class="toplink"> What we do </a>
 						<div> | </div>
 						<a href="about.html" class="toplink"> About Us </a>
 						<div> | </div>
-						<a href="howyoucanhelp.html" class="toplink"> How you can help </a>
+						<a href="howyoucanhelp.html" class="toplink" style="float: left; margin-right: 10px; color: #fcd307;"> How you can help </a>
 						<a href="https://www.facebook.com/Eunoia-1342363752454315/?ref=aymt_homepage_panel">
 							<img src="img/fb.jpg">
 						</a>
@@ -42,9 +42,8 @@
 				</div>
 			</div>
 		</div>
-		<br>
-		<div style="background-color: rgba(252, 211, 7, 1); padding-left: 200px; padding-bottom: 30px; padding-top: 30px; height: 150px; color: #000000;">
-			<p style="float: left; font-size: 70px; font-family: textfont3; margin-top: 0px"><b>+</b></p> <h1 style="float: left; font-family: header; font-size: 60px;"> How You Can Help </h1>
+		<div class="page-title">
+			<p>+</p> <h1> How You Can Help </h1>
 		</div>
 
 		<div id="imgcontain" style="height: 400px; overflow:hidden; margin-bottom: 20px;"><img src="img/city.jpg" style="width: 100%;"></div>
@@ -68,37 +67,40 @@
 				<div class="col-md-1"> </div>
 			</div>
 			<br>
-		</div>
-	<div style="background-color: #777777; height: 200px; color: #FFFFFF; padding-top: 40px;">
-		<div class="row">
-			<div class="col-md-1"></div>
+			<div class="row">
+				<div class="col-md-1"></div>
 
-			<div class="col-md-4">
-				<center>
-					<p style="font-size: 30px; font-family: stars; margin: 40px; margin-top: -10px;"> Thinking about becoming A Volunteer? </p>
-				</center>
+				<div class="col-md-4">
+					<center>
+						<p style="font-size: 30px; font-family: stars; margin: 40px; margin-top: -10px;"> Thinking about becoming A Volunteer? </p>
+					</center>
+				</div>
+				<form style="color: #000000;" action="doVolunteerAndReturn.php" method="get">
+					<div class="col-md-3">
+						<div class="input-group" style="margin-bottom: 7px;">
+							<span class="input-group-addon" id="basic-addon1">Name: </span>
+							<input type="text" name="name" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+						</div>
+						<div class="input-group" style="margin-bottom: 7px;">
+							<span class="input-group-addon" id="basic-addon1">Email: </span>
+							<input type="text" name="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+						</div>
+						<div class="input-group" style="margin-bottom: 7px;">
+							<span class="input-group-addon" id="basic-addon1">Subject: </span>
+							<input type="text" name="subject" class="form-control" placeholder="Subject" aria-describedby="basic-addon1">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="input-group" style="width: 100%; margin-bottom: 7px;">
+							<textarea name="message" class="form-control" rows="2" placeholder="Message" aria-describedby="basic-addon1"> </textarea>
+						</div>
+						<button type="submit" class="btn sample sm pull-right">Volunteer!</button>
+					</div>
+				</form>
 			</div>
-			<form style="color: #000000;" action="doVolunteerAndReturn.php" method="get">
-				<div class="col-md-3">
-					<div class="input-group" style="margin-bottom: 7px;">
-						<span class="input-group-addon" id="basic-addon1">Name: </span>
-						<input type="text" name="name" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-					</div>
-					<div class="input-group" style="margin-bottom: 7px;">
-						<span class="input-group-addon" id="basic-addon1">Email: </span>
-						<input type="text" name="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
-					</div>
-					<div class="input-group" style="margin-bottom: 7px;">
-						<span class="input-group-addon" id="basic-addon1">Subject: </span>
-						<input type="text" name="subject" class="form-control" placeholder="Subject" aria-describedby="basic-addon1">
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="input-group" style="width: 100%; margin-bottom: 7px;">
-						<textarea name="message" class="form-control" rows="2" placeholder="Message" aria-describedby="basic-addon1"> </textarea>
-					</div>
-					<button type="submit" class="btn sample sm pull-right" >Volunteer!</button>
-				</div>
-			</form>
+		</div>
+		<div style="font-size:12px; margin: 50px; padding: 5px; height: 20px;">
+			<div style="display: inline-block; float: left;"> &#169; 2016 BY Eunoia Corporation. <br> Maintained by: Riley Groeschel, Jeff Huang, and Henry Olling</div>
+			<div style="float: right;"> Eunoia Organization (Non-profit) |   Sacramento, CA <br> <b> James 1:27 </b></div>
 		</div>
 	</div>
