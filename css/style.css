@@ -187,12 +187,14 @@ table {
 }
 
 body {
-		margin: 0;
+		margin: auto;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.428571429;
     color: #333;
     background-color: #fff
+		overflow-y: scroll;
+		overflow-x: hidden;
 }
 
 input,
@@ -272,6 +274,10 @@ h6,
 		font-family: header;
 }
 
+h3, .h3 {
+  color: #000;
+}
+
 h1,
 h2,
 h3 {
@@ -286,7 +292,8 @@ h4{
 
 h2,
 .h2 {
-    font-size: 30px
+    font-size: 30px;
+    color: #000;
 }
 
 h3,
@@ -296,7 +303,8 @@ h3,
 
 h4,
 .h4 {
-    font-size: 18px
+    font-size: 18px;
+    color: #000;
 }
 
 h1 small,
@@ -317,8 +325,8 @@ h4 small,
 }
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 25px;
+    background-color: #EEEEEE;
     margin-right: auto;
     margin-left: auto
 }
@@ -447,6 +455,14 @@ h4 small,
     }
 }
 
+.donate {
+	float: right;
+	margin-right: 10px;
+	margin-top: 15px;
+	background-color: #fcd307;
+	padding: 10px 20px 10px 20px;
+}
+
 .toplink {
 	float: left;
 	margin-right: 10px;
@@ -455,6 +471,20 @@ h4 small,
 
 .toplink:hover {
 	color: #fcd307;
+}
+
+.pull-right div {
+	float: left;
+	margin-right: 10px;
+}
+
+.people {
+	margin-top: 10px;
+	font-style: italic;
+}
+
+.pull-right img {
+	float: left; margin-right: 10px; width: 20px;
 }
 
 select[multiple],
@@ -538,15 +568,17 @@ input[type="button"].btn-block {
     width: 100%
 }
 
-@font-face {
-    font-family: 'Glyphicons Halflings';
-    src: url('../fonts/glyphicons-halflings-regular.eot');
-    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg')
-}
+
 
 /*div.gallery { For Testing Div size
     border: 1px solid #ccc;
 }*/
+
+.gah {
+	border: 1px solid #FFFFFF;
+	padding: 10px 40px 10px 40px;
+	color: #FFFFFF;
+}
 
 div.gallery {
     margin: 5px;
@@ -570,7 +602,8 @@ div.gallery {
 .input-group {
     position: relative;
     display: table;
-    border-collapse: separate
+    border-collapse: separate;
+		width: 100%;
 }
 
 .input-group.col {
@@ -687,4 +720,120 @@ a.thumbnail:focus {
 .hidden {
     display: none!important;
     visibility: hidden!important
+}
+
+// CSS masonry
+.wrapper {
+    width: 95%;
+    margin: 3em auto;
+}
+
+.masonry {
+    margin: 1.5em 0;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+
+.item {
+    display: inline-block;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+    margin-bottom: 1.5em;
+}
+
+.item p {
+  background: #fff;
+  padding: 1em;
+  width: 100%;
+  line-height: 22px;
+  margin: 0;
+}
+
+.item img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .masonry {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1260px;
+    }
+}
+
+.header {
+  margin-top: 19px;
+  margin-bottom: 30px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+.footer {
+  padding: 25px;
+  background-color: #222222;
+  margin-right: auto;
+  margin-left: auto
+}
+
+.page-title {
+  background-color: rgba(252, 211, 7, 1);
+  padding-left: 200px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  height: 150px;
+  color: #000000;
+}
+
+.page-title p, .section-title p {
+  float: left;
+  font-size: 70px;
+  font-family: textfont3;
+  margin-top: 0px"
+  font-weight:bold;
+}
+
+.page-title h1, .section-title h1 {
+  float: left;
+  font-family: header;
+  font-size: 60px;
+}
+
+.section-title {
+  color: #ffffff;
 }
