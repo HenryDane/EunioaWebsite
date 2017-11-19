@@ -791,3 +791,16 @@ a.thumbnail:focus {
         width: 1260px;
     }
 }
+
+.header {
+  margin-top: 19px;
+  margin-bottom: 30px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+.footer {
+  padding: 25px;
+  background-color: #222222;
+  margin-right: auto;
+  margin-left: auto
+}
