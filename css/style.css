@@ -14,7 +14,7 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
@@ -34,7 +34,7 @@ select,
 textarea {
 		margin: 0;
 		font-family: inherit;
-		font-size: 100%
+		font-size: 100%;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit
@@ -275,6 +275,11 @@ h4,
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
 }
 
+.input-group-addon:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
 .form-control:focus {
     border-color: #66afe9;
     outline: 0;
@@ -449,10 +454,12 @@ textarea.form-control {
 
 .page-title p, .section-title p {
   float: left;
-  font-size: 70px;
+  font-size: 60px;
   font-family: textfont3;
-  margin-top: 0px"
-  font-weight:bold;
+  margin-top: 0px;
+  font-size: 60px;
+  display:inline-block;
+  font-weight: bolder;
 }
 
 .page-title h1, .section-title h1 {
@@ -463,4 +470,8 @@ textarea.form-control {
 
 .section-title {
   color: #ffffff;
+}
+
+.black {
+  color: #000000;
 }
