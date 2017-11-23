@@ -68,7 +68,14 @@
 				<h3>October 28, 2017</h3>
 				<p>Eunoia's first ever benefit concert. What a successful and joyful night it was. With the help of talented teen musicians as well as generous supporters we were able to fundraise over $2000! Thank you to all who helped out!</p>
 				<div class="masonry">
+					<?php
+						$dirname = "img/concert/";
+						$images = glob($dirname."*.png");
 
+						foreach($images as $image) {
+							echo '<div class="item"> <img src="'$image'" /></div>';
+						}
+					?>
 				</div>
 				<h3>October 21, 2016</h3>
 				<p> Donated school supplies to Luther Burbank High School. It was Eunoia's first official community outreach event, and it was a success. </p>
